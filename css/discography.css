@@ -1,0 +1,125 @@
+.main-container {
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+}
+.album {
+  display: block;
+  overflow: auto;
+  width: 1025px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: nanum gothic;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 20px -10px;
+}
+.image-container {
+  float: left;
+  width: 475px;
+  height: 475px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+.image {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.info-container {
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 475px;
+  color: white;
+}
+.block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 0;
+}
+.title {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.release-date {
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.tracklist {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.author {
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 1075px) {
+  .album {
+    width: 525px;
+  }
+  .image-container {
+    float: none;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-container {
+    float: none;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 585px) {
+  .album {
+    width: 90%;
+    margin-bottom: 5.2vw;
+  }
+  .image-container {
+    width: 90%;
+    height: 81vw;
+    margin-top: 4.3vw;
+  }
+  .info-container {
+    width: 90%;
+    margin-top: 4.3vw;
+    margin-bottom: 4.3vw;
+  }
+  .tracklist {
+    margin-top: 3.7vw;
+  }
+}
+@media (max-width: 500px) {
+  .block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .title {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .release-date {
+    font-size: 10px;
+  }
+  .tracklist {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 359px) {
+  .title {
+    font-size: 14px;
+  }
+  .release-date {
+    font-size: 8px;
+  }
+}

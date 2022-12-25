@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  background: transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: rgb(186, 171, 227)
+}
+nav {
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  font-family: nanum gothic;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 0;
+}
+nav div {
+  padding-top: 55px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 0px solid transparent;
+  color: rgba(0, 0, 0, .7);
+  cursor: pointer;
+  transition: border-top .1s linear, color .1s linear;
+}
+footer {
+  position: fixed;
+  width: 76%;
+  max-width: 1520px;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+footer span {
+  font-family: dancing script;
+  font-size: 45px;
+  color: rgba(0, 0, 0, .7);
+  transition: color .2s;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  nav div:hover {
+    border-top: 3px solid white;
+    color: white;
+  }
+  footer span:hover {
+    color: white;
+  }
+}
+@media (max-width: 1700px) {
+  footer {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    height: 60px;
+    border-bottom: none;
+  }
+  nav div {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  nav div {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  nav div {
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  nav div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
