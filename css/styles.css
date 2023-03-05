@@ -22,14 +22,14 @@ nav {
   justify-content: center;
   height: 110px;
   font-family: nanum gothic;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -1px;
   line-height: 0;
 }
 nav div {
   padding-top: 55px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-top: 0px solid transparent;
   color: rgba(0, 0, 0, .7);
   cursor: pointer;
@@ -71,9 +71,12 @@ footer span {
   nav {
     height: 60px;
     border-bottom: none;
+    font-size: 20px;
   }
   nav div {
     padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 500px) {
