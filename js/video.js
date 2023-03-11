@@ -6,6 +6,12 @@
   }
 
   const videos = [
+    new Video('SET ME FREE', 'w4cTYnOPdNk'),
+    new Video('MOONLIGHT SUNRISE', 'cKlEE_EYuNM'),
+    new Video('Talk that Talk', 'k6jqx9kZgPM'),
+    new Video('POP!', 'f6YDKF0LVWw'),
+    new Video('Celebrate', 'fMIn43MiwG8'),
+    new Video('Doughnut', 'VcOSUOpACq0'),
     new Video('SCIENTIST', 'vPwaXytZcgI'),
     new Video('The Feels', 'f5_wn8mexmM'),
     new Video('Perfect World', 'fmOEKOjyDxU'),

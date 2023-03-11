@@ -9,6 +9,64 @@
 
   const albums = [
     new Album(
+      'READY TO BE',
+      'March 10, 2023',
+      'readytobe',
+      [
+        'SET ME FREE',
+        'MOONLIGHT SUNRISE',
+        'GOT THE THRILLS',
+        'BLAME IT ON ME written by Dahyun',
+        'WALLFLOWER',
+        'CRAZY STUPID LOVE written by Dahyun',
+        'SET ME FREE (ENG)'
+      ]
+    ),
+    new Album(
+      'BETWEEN 1&2',
+      'August 26, 2022',
+      'between1&2',
+      [
+        'Talk That Talk',
+        'Queen of Hearts',
+        'Basics written by Chaeyoung',
+        'Trouble written by Jihyo',
+        'Brave',
+        'Gone written by Dahyun',
+        'When We Were Kids written by Dahyun'
+      ]
+    ),
+    new Album(
+      'Celebrate',
+      'July 27, 2022',
+      'celebrate',
+      [
+        'Celebrate written by TWICE',
+        'Voices of Delight',
+        'Tick Tock written by Dahyun',
+        'Flow Like Waves',
+        'That\'s All I\'m Saying written by Dahyun',
+        'Bitter Sweet',
+        'Sandcastle',
+        'Just Be Yourself',
+        'Doughnut'
+      ]
+    ),
+    new Album(
+      'IM NAYEON',
+      'June 24, 2022',
+      'imnayeon',
+      [
+        'POP!',
+        'NO PROBLEM',
+        'LOVE COUNTDOWN written by Nayeon',
+        'CANDYFLOSS',
+        'ALL OR NOTHING written by Nayeon',
+        'HAPPY BIRTHDAY TO YOU',
+        'SUNSET'
+      ]
+    ),
+    new Album(
       'Formula of Love',
       'November 12, 2021',
       'formulaoflove',
