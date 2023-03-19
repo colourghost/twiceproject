@@ -1,4 +1,4 @@
-.main-container {
+.video__container {
   width: 1316px;
   height: 600px;
   border-radius: 10px;
@@ -10,18 +10,18 @@
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 20px -10px;
 }
-iframe {
+.video__iframe {
   float: left;
   width: 1066px;
   height: 600px;
 }
-.video-container {
+.video__playlist {
   float: right;
   width: 250px;
   height: 600px;
   overflow: auto;
 }
-#video {
+.video__playlist > a {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -29,50 +29,47 @@ iframe {
   font-size: 14px;
   text-indent: 20px;
   text-decoration: none;
+  color: white;
   transition: background .2s, color .2s;
 }
 @media (hover: hover) {
-  #video:hover {
+  .video__playlist > a:hover {
     background: rgba(0, 0, 0, 0.2);
   }
 }
-.light {
-  color: white;
+.video__active {
   background: rgba(0, 0, 0, 0.2);
 }
-.dark {
-  color: white;
-}
 @media (max-width: 1380px) {
-  .main-container {
+  .video__container {
     width: 1022px;
     height: 434px;
   }
-  iframe {
+  .video__iframe {
     width: 772px;
     height: 434px;
   }
-  .video-container {
+  .video__playlist {
     height: 434px;
   }
 }
 @media (max-width: 1085px) {
-  .main-container {
+  .video__container {
     width: 100%;
     height: initial;
     border-radius: 0px;
   }
-  iframe {
+  .video__iframe {
     float: none;
     width: 100vw;
     height: 56.25vw;
   }
-  .video-container {
+  .video__playlist {
     float: none;
     width: 100%;
     height: initial;
   }
-  #video {
+  .video__playlist > a {
     text-indent: 0px;
     text-align: center;
   }

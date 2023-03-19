@@ -1,5 +1,8 @@
 node_modules
 package-lock.json
 package.json
-twiceproject.js
+dev.html
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
 .DS_Store

@@ -1,4 +1,4 @@
-.thumb-container {
+.gallery__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -8,12 +8,12 @@
   margin-right: auto;
   line-height: 0;
 }
-.thumb-bg {
+.gallery__thumb-bg {
   border-radius: 4px;
   margin: 5px;
   background: rgba(0, 0, 0, 0.2);
 }
-.thumb {
+.gallery__thumb {
   height: 180px;
   border-radius: 4px;
   cursor: pointer;
@@ -21,17 +21,18 @@
   transition: opacity 0.3s;
   box-shadow: 0px 10px 10px -7px rgba(50, 50, 50, 0.5);
 }
-.modal {
+.gallery__modal {
   position: fixed;
-  z-index: -1;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
   opacity: 0;
-  transition: opacity .5s;
+  transition: visibility 0.5s, opacity .5s;
 }
-.photo-container {
+.gallery__photo-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -41,43 +42,43 @@
   margin-right: auto;
   height: 100%;
 }
-.main-photo {
+.gallery__main-photo {
   max-width: 60%;
   max-height: 90%;
   border-radius: 10px;
 }
-.prev,
-.next {
+.gallery__prev,
+.gallery__next {
   position: absolute;
-  top: 47%;
+  top: 47vh;
   color: rgba(255, 255, 255, 0.5);
   transition: color .2s;
   font-size: 50px;
   cursor: pointer;
 }
-.prev {
+.gallery__prev {
   left: 15%;
 }
-.next {
+.gallery__next {
   right: 15%;
 }
 @media (hover: hover) {
-  .prev:hover,
-  .next:hover {
+  .gallery__prev:hover,
+  .gallery__next:hover {
     color: white;
   }
 }
 @media (max-width: 1200px) {
-  .close-btn {
+  .gallery__close-btn {
     display: inline;
   }
-  .prev {
+  .gallery__prev {
     left: 0;
   }
-  .next {
+  .gallery__next {
     right: 0;
   }
-  .main-photo {
+  .gallery__main-photo {
     max-width: 100%;
     max-height: 100%;
     border-radius: 0px;

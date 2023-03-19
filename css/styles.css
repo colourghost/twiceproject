@@ -30,10 +30,26 @@ nav div {
   padding-top: 55px;
   padding-left: 20px;
   padding-right: 20px;
-  border-top: 0px solid transparent;
+  border-top: 0px solid white;
   color: rgba(0, 0, 0, .7);
   cursor: pointer;
-  transition: border-top .1s linear, color .1s linear;
+  transition: padding-top 0.1s linear, border-top 0.1s linear, color 0.1s linear;
+}
+.main {
+  position: relative;
+}
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+.active {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 footer {
   position: fixed;
@@ -55,6 +71,7 @@ footer span {
 }
 @media (hover: hover) {
   nav div:hover {
+    padding-top: 52px;
     border-top: 3px solid white;
     color: white;
   }
