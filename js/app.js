@@ -1,5 +1,5 @@
 export const app = (members, albums, images) => {
-  const navLinks = document.querySelectorAll('nav > div')
+  const navLinks = document.querySelectorAll('nav > div > span')
   const main = document.querySelector('.main')
   const footer = document.querySelector('footer > span')
   const profileThumbContainer = document.querySelector('.profile__thumb-container')
@@ -11,6 +11,14 @@ export const app = (members, albums, images) => {
   let gallery = false
 
   const addListeners = _ => {
+    navLinks.forEach(link => {
+      link.addEventListener('mouseenter', _ => {
+        link.parentElement.classList.add('illumine')
+      })
+      link.addEventListener('mouseleave', _ => {
+        link.parentElement.classList.remove('illumine')
+      })
+    })
     footer.addEventListener('click', _ => {
       toggleClass(0)
     })

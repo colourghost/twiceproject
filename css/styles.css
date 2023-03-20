@@ -26,14 +26,21 @@ nav {
   font-weight: bold;
   line-height: 0;
 }
-nav div {
+nav > div {
   padding-top: 55px;
   padding-left: 20px;
   padding-right: 20px;
   border-top: 0px solid white;
   color: rgba(0, 0, 0, .7);
-  cursor: pointer;
   transition: padding-top 0.1s linear, border-top 0.1s linear, color 0.1s linear;
+}
+nav > div > span {
+  cursor: pointer;
+}
+.illumine {
+  padding-top: 52px;
+  border-top: 3px solid white;
+  color: white;
 }
 .main {
   position: relative;
@@ -70,11 +77,6 @@ footer span {
   cursor: pointer;
 }
 @media (hover: hover) {
-  nav div:hover {
-    padding-top: 52px;
-    border-top: 3px solid white;
-    color: white;
-  }
   footer span:hover {
     color: white;
   }

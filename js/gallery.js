@@ -55,8 +55,6 @@ export const gallery = images => {
     })
   }
 
-
-
   mountThumbs()
   addCloseListener()
   addThumbListener()
